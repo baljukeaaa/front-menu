@@ -1,4 +1,5 @@
-import { Facebook, Instagram } from "lucide-react"
+import { Facebook, Instagram, } from "lucide-react"
+import Link from "next/link";
 
 const Footer = () => {
     return(
@@ -21,13 +22,15 @@ const Footer = () => {
             </div>
           </div>
          
-          <div className="text-amber-50 flex flex-col gap-4 ">
+         <Link href={`/`}>
+         <div className="text-amber-50 flex flex-col gap-4 ">
             <p className="text-[#71717A]">NOMNOM </p>
             <p>Home</p>
             <p>Contact us</p>
             <p>Delivery zone</p>
 
           </div>
+         </Link>
           <div className="text-amber-50 flex flex-col gap-4">
             <p className="text-[#71717A]">MENU </p>
             <p>Appetizers</p>
@@ -45,15 +48,18 @@ const Footer = () => {
             <p>Beverages</p>
             <p>Fish & Sea foods</p>
           </div>
-          <div className="text-amber-50 flex flex-col gap-4">
+         <Link href={`/`}>
+         <div className="text-amber-50 flex flex-col gap-4">
             <p className="text-[#71717A]">FOLLOW US</p>
             <div className="flex">
               <Instagram></Instagram>
               <Facebook></Facebook>
             </div>
           </div>
+         </Link>
         </div>
-        <div className="border-t border-gray-800 pl-2 pr-2 ">
+       <Link href={`/`}>
+       <div className="border-t border-gray-800 pl-2 pr-2 ">
             <div className="flex flex-wrap justify-between text-gray-400 text-sm pt-(--spacing-2)">
               <div className="mb-2 md:mb-0">Copy right 2025 © AriiEats LLC</div>
               <div className="flex gap-6">
@@ -70,6 +76,7 @@ const Footer = () => {
             </div>
           </div>
 
+       </Link>
       </div>
       
 

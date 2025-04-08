@@ -1,8 +1,20 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Plus } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 
-const CardComp = () => {
+const Cardcomppp = () => {
     const foodCategoies = [
         {
             id: 1,
@@ -55,9 +67,10 @@ const CardComp = () => {
 
     return (
         <div>
+              <Plus className="text-red-600"></Plus>
 
             <div className="p-8 bg-[#404040]" >
-            <h3 className="text-3xl font-semibold flex ml-20 ">Appetizers</h3>
+                <h3 className="text-3xl font-semibold flex ml-20 ">Lunch favorites</h3>
                 <div className="grid grid-cols-3 items-center justify-items-center justify-self-center w-fit  gap-8  font-[familyname:var(--font-geist-sans)]  ">
                     {foodCategoies.map((category) => {
 
@@ -67,11 +80,12 @@ const CardComp = () => {
                                 <img src={`${category.img}`}>
 
                                 </img>
+                                <div className="w-[40px] h-[40px] bg-white rounded-full absolute top-40 right-10 flex items-center justify-around gap-10 ">
+                                  
+                                </div>
 
                             </CardContent>
-                            <div className="w-[40px] h-[40px] bg-white rounded-full absolute top-40 right-10 flex items-center justify-around gap-10 ">
-                                <Plus className="text-red-600"></Plus>
-                            </div>
+                         
                             <CardHeader className="p-2">
                                 <div className="flex gap-6 justify-between">
                                     <CardTitle className="text-[24px] text-red-600 ">{category.foodTitle}</CardTitle><span className="">{category.price}</span>
@@ -90,4 +104,4 @@ const CardComp = () => {
         </div>
     )
 }
-export default CardComp
+export default Cardcomppp

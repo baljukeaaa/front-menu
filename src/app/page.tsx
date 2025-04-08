@@ -39,18 +39,24 @@ const DATA = [{
   ]
 }
 ]
-import { ChevronRight, Facebook, Instagram, Link, } from 'lucide-react';
+
 
 
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import CardComp from './components/CardComp';
+import CardCompp from './components/Cardcompp';
+import Cardcomppp from './components/Cardcomppp';
+import CatoComp from './components/CatoComp';
 
 export default function Home() {
   return (
     <div>
       <Header></Header>
+      <CatoComp></CatoComp>
       <CardComp></CardComp>
+      <CardCompp></CardCompp>
+      <Cardcomppp></Cardcomppp>
 
       <Footer></Footer>
     </div>

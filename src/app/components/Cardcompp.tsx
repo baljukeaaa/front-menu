@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Plus } from "lucide-react";
 
 
-const CardComp = () => {
+const CardCompp = () => {
     const foodCategoies = [
         {
             id: 1,
@@ -31,24 +31,7 @@ const CardComp = () => {
             overview:
                 "Fluffy pancakes stacked with fruits, cream, syrup, and powdered sugar.",
         },
-        {
-            id: 4,
-            categoryName: "Salads",
-            foodTitle: "Sunshine Stackers ",
-            img: `hool.png`,
-            price: " $12.99",
-            overview:
-                "Fluffy pancakes stacked with fruits, cream, syrup, and powdered sugar.",
-        },
-        {
-            id: 5,
-            categoryName: "Salads",
-            foodTitle: "Sunshine Stackers ",
-            img: `pru.png`,
-            price: " $12.99",
-            overview:
-                "Fluffy pancakes stacked with fruits, cream, syrup, and powdered sugar.",
-        },
+       
     ];
 
 
@@ -57,8 +40,8 @@ const CardComp = () => {
         <div>
 
             <div className="p-8 bg-[#404040]" >
-            <h3 className="text-3xl font-semibold flex ml-20 ">Appetizers</h3>
-                <div className="grid grid-cols-3 items-center justify-items-center justify-self-center w-fit  gap-8  font-[familyname:var(--font-geist-sans)]  ">
+            <h3 className="text-3xl font-semibold flex ml-20 ">Salads</h3>
+                <div className="grid grid-cols-3 items-center justify-items-center justify-self-center w-fit  gap-8 font-[familyname:var(--font-geist-sans)]  ">
                     {foodCategoies.map((category) => {
 
                         return <Card key={category.id} className=" p-0 gap-0 ">
@@ -90,4 +73,4 @@ const CardComp = () => {
         </div>
     )
 }
-export default CardComp
+export default CardCompp
