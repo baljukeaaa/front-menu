@@ -42,14 +42,27 @@ const DATA = [{
 
 
 
+
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import CardComp from './components/CardComp';
 import CardCompp from './components/Cardcompp';
 import Cardcomppp from './components/Cardcomppp';
 import CatoComp from './components/CatoComp';
+import { BASE_URL } from "./constants";
 
-export default function Home() {
+  
+  
+
+
+
+export default async function Home() {
+  const response = await fetch (`${BASE_URL}/food`,{
+    headers:{
+      "Content-Type":"application/json",}
+  });
+  const foods = await response.json();
+  
   return (
     <div>
       <Header></Header>
